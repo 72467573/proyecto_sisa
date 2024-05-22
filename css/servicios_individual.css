@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-1: #7FDDA5;
+}
+
+h1{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: var(--color-1);
+}
+.sub-text{
+    font-weight: bold;
+
+}
