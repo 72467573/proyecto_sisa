@@ -130,12 +130,13 @@ header {
     }
     .nav-bar ul li:first-child {
         border-top: 5px solid #000; /* Añadir la línea horizontal */
+        border-top: 5px solid #000;
         width: 100%;
         margin-top: 20px;
     }
     .nav-bar ul li a {
         display: block;
-        width: auto; /* Cambiar el ancho del elemento del menú a automático */
+        width: auto; 
         padding: 10px 25px;
 }}
 
