@@ -112,7 +112,7 @@ header {
         top: 80px;
         left: 0;
         right: 0;
-        background: transparent; /* Cambiar el fondo del menú a transparente */
+        background: transparent; 
         overflow: hidden;
         transition: max-height 0.5s ease;
         max-height: 0;
@@ -129,7 +129,6 @@ header {
         position: relative;
     }
     .nav-bar ul li:first-child {
-        border-top: 5px solid #000; /* Añadir la línea horizontal */
         border-top: 5px solid #000;
         width: 100%;
         margin-top: 20px;
