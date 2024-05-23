@@ -14,7 +14,7 @@ body {
 header {
     width: 100%;
     height: 80px;
-    background: transparent; /* Cambiar el fondo del encabezado a transparente */
+    background: transparent; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,7 +25,7 @@ header {
 .logo {
     font-size: 28px;
     font-weight: bold;
-    color: #000; /* Cambiar el color del texto del logo a negro */
+    color: #000; 
 }
 
 .hamburger {
@@ -47,7 +47,7 @@ header {
 
 .nav-bar ul li a {
     display: inline-block;
-    color: #000; /* Cambiar el color del texto del menú a negro */
+    color: #000; 
     font-size: 20px;
     padding: 10px 25px;
     border-radius: 50px;
@@ -57,15 +57,15 @@ header {
 
 .nav-bar ul li a:hover {
     color: #8FEDA8;
-    background: transparent; /* Cambiar el fondo del elemento del menú al pasar el ratón */
+    background: transparent; 
 }
 
 .nav-bar ul li a.active {
     color: #8FEDA8;
-    background: transparent; /* Cambiar el fondo del elemento activo del menú */
+    background: transparent; 
 }
 
-/* Agregar línea horizontal en el menú de escritorio */
+
 .nav-bar ul::before {
     content: '';
     display: block;
@@ -112,7 +112,7 @@ header {
         top: 80px;
         left: 0;
         right: 0;
-        background: transparent; /* Cambiar el fondo del menú a transparente */
+        background: transparent; 
         overflow: hidden;
         transition: max-height 0.5s ease;
         max-height: 0;
@@ -129,14 +129,14 @@ header {
         position: relative;
     }
     .nav-bar ul li:first-child {
-        border-top: 5px solid #000; /* Añadir la línea horizontal */
+        border-top: 5px solid #000; 
         width: 100%;
         margin-top: 20px;
     }
     .nav-bar ul li a {
         display: block;
-        width: auto; /* Cambiar el ancho del elemento del menú a automático */
-        padding: 10px 25px;
+        width: auto; 
+        padding: 10px 25px;
 }
 }
 .pie-pagina{
