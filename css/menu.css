@@ -77,6 +77,19 @@ header {
     left: 0;
 }
 
+.user-icon {
+    margin-left: auto;
+}
+
+.user-icon a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.user-icon i {
+    font-size: 24px;
+}   
+
 @media only screen and (max-width: 1320px) {
     header {
         padding: 0 50px;
