@@ -10,6 +10,12 @@
 body {
     background: #fefefe;
 }
+.section-img{
+    background-image: url("/Img/inicio/principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 h1{
     font-weight: bold;   
 }
@@ -24,7 +30,11 @@ h1{
 }
 .parrafo{
     font-weight: bold;
-    color: var(--color-3);
+    color:white;
+}
+.parrafo2{
+    font-weight: bold;
+    color:var(--color-3);
 }
 .box-estres{
     padding-left: 10%;
@@ -103,7 +113,7 @@ input{
 }
 
 .formulario {
-    background-color: #ffffff70;
+    background-color: #ffffff;
     border: #000;
     border-radius: 5px;
 }
