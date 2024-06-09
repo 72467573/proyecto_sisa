@@ -1,0 +1,103 @@
+:root{
+    --color-primario: #eed49d;
+    --sombras: #122007;
+    --bordes: #cec8bf;
+    --contenido:#e7e4df;
+    --color-titulos:#282d31;
+    --color-parrafos:#53575a;
+    --color-boton:#b6ad9f;
+    --color-hover:#9e927f;
+    --color-input: #a8d4e0;
+    --texto-botones: #FF4B36; 
+    --fondo-azul:  #070F4D; 
+    --fondo-claro: #F2F6FF; 
+    --color-1: #7FDDA5;
+}
+
+
+/*INICIO DE MENÚ*/
+
+header{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /*elementos detrás(-) o delante(+) de todo*/
+    box-shadow: 0 1px 4px var(--sombras)  ; /*desp. horizontal, vertical, difuminado, color */
+}
+
+.menu{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row; /*elementos en fila*/
+    justify-content: space-between; /*acomodar elementos equitativ.*/
+    align-items: center;
+}
+
+.loguito{
+    height: 5em;
+    width: 5em;
+}
+
+.btn-menu{
+    display: none;
+}
+
+.enlaces a{
+    color: var(--color-parrafos);
+    font-weight: bold;
+    font-family: 'Roboto';
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.enlaces a:hover{
+    color: var(--color-1);
+}
+
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+
+
+/*RESPONSIVE WEB DESIGN CON MEDIA QUERY*/
+@media screen and (max-width: 1023px) {  /*max(movil)(afecta hasta pantallas mx de 1023) min(pc)(desde___ para arriba)*/
+
+    .menu{
+        flex-direction: column;
+    }
+    .logo{ 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+    }
+    .btn-menu{
+        display: block;
+        text-decoration: none;
+        color: var(--color-parrafos);
+        font-size: 0.8em;
+        margin-top: 0.8em;
+
+    }
+    .btn-menu:hover{
+    color: var(--color-1);
+    }
+
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.9em;
+    }
+}
