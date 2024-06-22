@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0px;
     padding: 0;
@@ -21,6 +23,15 @@ h1{
 }
 .titulo1{
     color: var(--color-2);
+}
+.titulo1-1{
+    font-weight: bold;
+    color: var(--color-2);
+    text-shadow: 
+    -1px -1px 0 #fff,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 .titulo-form{
     color: rgb(250, 250, 250);
@@ -60,13 +71,20 @@ h1{
 }
 
 input[type="submit"]{
-    width: 100%;
     height: 50px;
     border: 1px solid;
     background: var(--color-2);
-    border-radius: 10px;
+    border-radius: 25px;
     color: #fff;
     font-weight: bold;
+    align-items: center;
+}
+.cuadrito{
+    border-radius: 20px;
+}
+.btn-primary{
+    width: 50%;
+    border-radius: 25px;
 }
 
 form{
@@ -101,10 +119,12 @@ input{
     color:var(--color-3);
 }
 .formulario .titulo-form{
-    background-color: var(--color-1);
+    background-color: var(--color-2);
     font-weight: bolder;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 .formulario .subtitulo-form{
     font-size: 20px;
@@ -115,7 +135,7 @@ input{
 .formulario {
     background-color: #ffffffd0;
     border: #000;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 
 
