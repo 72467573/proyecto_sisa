@@ -4,14 +4,24 @@
     text-decoration: none;
     list-style: none;
 }
-
+:root{
+    --color-primario: #EC111A;
+    --sombras: #282D31;
+    --bordes: #DFE0E0;
+    --color-titulos: #282D31;
+    --color-parrafos: #53575A;
+    --color-1: #7FDDA5;
+    --color-2: #1bc35e;
+    --color-3: #6d736f;
+}
+.titulo1-1{
+    font-weight: bold;
+    color: var(--color-2);
+}
+.prod-container{
+    background-color: #d4d4d4;
+}
 body{
-    background: linear-gradient(
-        180deg,
-        rgba(204,204,204,1) 0%,
-        rgba(238,238,238,1) 50%,
-        rgba(204,204,204,1) 100%
-    );
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     min-height: 50vh;
 }
