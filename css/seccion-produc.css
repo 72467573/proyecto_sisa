@@ -1,0 +1,159 @@
+.banner{
+    background:linear-gradient(#87c6984b, #87c698);
+    height:260px;
+    background-position: center;
+}
+
+.content-banner{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: auto;
+}
+
+.content-banner p{
+    margin-top: 0.7rem;
+    color: rgb(28, 167, 136);
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.content-banner h2{
+    color: rgb(86, 87, 87);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.content-banner a{
+    margin-top: 1.3rem;
+    text-decoration: none;
+    color: #FFF;
+    background-color: rgba(30, 119, 75, 0.521);
+    display: inline-block;
+    padding: 1rem 2.2rem;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.main-content{
+    background-color: #e2e2e2;
+}
+
+.container-features{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+    padding: 2rem 0;
+}
+
+.card-feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem 0;
+}
+
+.card-feature i{
+    font-size: 2rem;
+    color: #87c698;
+}
+
+.feature-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.feature-content span{
+    font-weight: 700;
+    font-size: 1rem;
+    color: #424242;
+}
+
+.feature-content p{
+    color: #777;
+    font-weight: 500;
+}
+
+.top-categories{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.container-categories{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem
+}
+
+.card-category{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 2rem
+}
+
+.category-bola{
+    background-image: linear-gradient(#0000009d, #0000009d), url("/Img/imgProductos/cursos.png");
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.category-infucion{
+    background-image: linear-gradient(#0000009d, #0000009d), url("/Img/imgProductos/anis.avif");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.category-popits{
+    background-image: linear-gradient(#0000009d, #0000009d), url("/Img/imgProductos/pop.webp");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-category p{
+    font-size: 2rem;
+    color: #f3f3f3;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.card-category p::after{
+    content: '';
+    width: 2rem;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.card-category span{
+font-size: 1.3rem;
+color: #ebebeb;
+cursor: pointer;
+}
+
+.card-category span:hover{
+    color: #87c698;
+}
+
+.top-products{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
