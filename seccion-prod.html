@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/app.js" async></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/pie-de-pagina.css">
@@ -43,7 +46,7 @@
     <section class="banner">
         <div class="content-banner">
             <p>SISA</p>
-            <h2>Productos 100%<br> Recoemdados por especialistas</h2>
+            <h2>Productos 100%<br> Recomendados por especialistas</h2>
             <a href="#">Comprar Ahora</a>
         </div>
     </section>
@@ -96,54 +99,101 @@
                 </div>
             </div>
         </section>
-
-        <section class="container top-products">
-            <h1 class="heading-1">Mejores productos</h1>
-
-            <div class="container-options">
-                <span class="active">Destacados</span>
-                <span>Lo mas nuevo</span>
-                <span>Más vendidos</span>
+        <section class="contenedor">
+            <!-- Contenedor de elementos -->
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Infinity Cube</span>
+                    <img src="/Img/imgProductos/112.jpg" alt="" class="img-item">
+                    <span class="precio-item">$15.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Cubo</span>
+                    <img src="/Img/imgProductos/pelot.jpg" alt="" class="img-item">
+                    <span class="precio-item">$25.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Egg</span>
+                    <img src="/Img/imgProductos/huev.jpg" alt="" class="img-item">
+                    <span class="precio-item">$35.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Pasiflora</span>
+                    <img src="/Img/imgProductos/pass.jpg" alt="" class="img-item">
+                    <span class="precio-item">$18.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Manzanilla</span>
+                    <img src="/Img/imgProductos/manzanilla.webp" alt="" class="img-item">
+                    <span class="precio-item">$32.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Salvia</span>
+                    <img src="/Img/imgProductos/salvia.jpg" alt="" class="img-item">
+                    <span class="precio-item">$32.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+    
+             
+               
             </div>
-
-            <div class="container-products">
-                <div class="card-product">
-                    <div class="container-img">
-                        <img src="Img/imgProductos/8.jpg" alt="pop its">
-                        <span class="discount">-13%</span>
-                        <div class="button-group">
-                            <span>
-                                <i class="fa-regular fa-eye"></i>
-                            </span>
-                                
-                            <span>
-                                <i class="fa-regular fa-heart"></i>
-                            </span>
-
-                            <span>
-                                <i class="fa-regular fa-code-compare"></i>
-                            </span>
-                        </div>
-                        <div class="content-card-product">
-                            <div class="starts">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+            <!-- Carrito de Compras -->
+            <div class="carrito" id="carrito">
+                <div class="header-carrito">
+                    <h2>Tu Carrito</h2>
+                </div>
+    
+                <div class="carrito-items">
+                    <!-- 
+                    <div class="carrito-item">
+                        <img src="img/boxengasse.png" width="80px" alt="">
+                        <div class="carrito-item-detalles">
+                            <span class="carrito-item-titulo">Box Engasse</span>
+                            <div class="selector-cantidad">
+                                <i class="fa-solid fa-minus restar-cantidad"></i>
+                                <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                                <i class="fa-solid fa-plus sumar-cantidad"></i>
                             </div>
-                            <h3>Controller Pop Its</h3>
-                            <spam class="add-cart">
-                                <i class="fa-solid fa-basket-shopping"></i>
-                            </spam>
-                            <p class="price">S/14.00 <span>S/17.00</span></p>
+                            <span class="carrito-item-precio">$15.000,00</span>
                         </div>
+                       <span class="btn-eliminar">
+                            <i class="fa-solid fa-trash"></i>
+                       </span>
                     </div>
-                   <!--Producto 2-->
-
+                    <div class="carrito-item">
+                        <img src="img/skinglam.png" width="80px" alt="">
+                        <div class="carrito-item-detalles">
+                            <span class="carrito-item-titulo">Skin Glam</span>
+                            <div class="selector-cantidad">
+                                <i class="fa-solid fa-minus restar-cantidad"></i>
+                                <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                                <i class="fa-solid fa-plus sumar-cantidad"></i>
+                            </div>
+                            <span class="carrito-item-precio">$18.000,00</span>
+                        </div>
+                       <button class="btn-eliminar">
+                            <i class="fa-solid fa-trash"></i>
+                       </button>
+                    </div>
+                     -->
+                </div>
+                <div class="carrito-total">
+                    <div class="fila">
+                        <strong>Tu Total</strong>
+                        <span class="carrito-precio-total">
+                            $120.000,00
+                        </span>
+                    </div>
+                    <button class="btn-pagar" id="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
                 </div>
             </div>
         </section>
+        
     </main>
 </body>
 <footer class="pie-pagina">
