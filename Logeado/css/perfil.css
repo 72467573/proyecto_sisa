@@ -15,14 +15,14 @@
 }
 
 .perfil-foto {
-    width: 150px; /* Tamaño ajustado de la foto de perfil */
-    height: 150px; /* Tamaño ajustado de la foto de perfil */
+    width: 150px; 
+    height: 150px; 
     border-radius: 50%;
     margin-right: 20px;
 }
 
 .perfil-datos {
-    text-align: left; /* Alinea el texto a la izquierda */
+    text-align: left; 
     flex-grow: 1;
 }
 
@@ -40,10 +40,24 @@
 
 .perfil-botones .btn {
     margin-right: 10px;
+    background-color: #7FDDA5;
+    border-color: #7FDDA5;
+}
+
+.perfil-botones .btn:hover {
+    background-color: #6FC394;
+    border-color: #6FC394;
 }
 
 .perfil-info {
     display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.perfil-info.active {
+    display: block;
+    opacity: 1;
 }
 
 .perfil-info h3 {
@@ -61,4 +75,18 @@
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
+}
+
+.curso-link {
+    color: #1b914a;
+    text-decoration: none;
+}
+
+.curso-link:hover {
+    text-decoration: underline;
+}
+
+.curso-detalles {
+    display: none;
+    margin-top: 20px;
 }
