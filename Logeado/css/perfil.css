@@ -1,0 +1,64 @@
+.perfil-usuario {
+    background-color: white;
+    padding: 20px;
+}
+
+.perfil-usuario .container {
+    width: 80%;
+    margin: auto;
+}
+
+.perfil-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.perfil-foto {
+    width: 150px; /* Tamaño ajustado de la foto de perfil */
+    height: 150px; /* Tamaño ajustado de la foto de perfil */
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.perfil-datos {
+    text-align: left; /* Alinea el texto a la izquierda */
+    flex-grow: 1;
+}
+
+.perfil-datos h2 {
+    margin: 0;
+}
+
+.perfil-datos p {
+    margin: 5px 0;
+}
+
+.perfil-botones {
+    margin-bottom: 20px;
+}
+
+.perfil-botones .btn {
+    margin-right: 10px;
+}
+
+.perfil-info {
+    display: none;
+}
+
+.perfil-info h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.perfil-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.perfil-info li {
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
