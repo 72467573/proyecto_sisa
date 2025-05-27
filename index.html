@@ -54,29 +54,29 @@
             <section class="col-xs-12 col-sm-12 col-md-5">
 <br>
             <div class="formulario">   
-                <form action="formulario_inicio.php" method="post">
-                    <center><h3 class="titulo-form">Para mas información rellene este formulario</h3></center>
-                    <h1 class="subtitulo-form">Coloque sus datos aquí:</h1>
+                <form id="formularioInfo">
+    <center><h3 class="titulo-form">Para más información rellene este formulario</h3></center>
+    <h1 class="subtitulo-form">Coloque sus datos aquí:</h1>
 
-                    <div class="form-container">
-                    <input class="cuadrito" class="" type="text" name="nombres" placeholder="Nombres y Apellidos" required>
-                    <input class="cuadrito" type="email" name="correo" placeholder="Correo" required>
-                    <input class="cuadrito" type="tel" name="tel" placeholder="Celular / Telefono" required>
-                    <input class="cuadrito" type="text" name="Asunto" placeholder="Su consulta" required>
-                    </div>    
-                    <div class="mb-3">
-                        <div class="aceptar-politicas">
-                        <input type="checkbox"><span class="pol_priv1">Acepto las </span><span class="pol_priv">políticas de privacidad</span> <span class="pol_priv1"> y los</span> <span class="pol_priv">terminos de condiciones.</span> 
-                        </div>                        
-                    </div>
-                   
-                    <div class="mb-3">
-                        <center>
-                            <input class="btn btn-primary" type="submit" value="Solicitar">                   
-                        </center>                    
-                    </div>
+    <div class="form-container">
+        <input class="cuadrito" type="text" id="nombre_completo" placeholder="Nombres y Apellidos" required>
+        <input class="cuadrito" type="email" id="correo" placeholder="Correo" required>
+        <input class="cuadrito" type="tel" id="telefono" placeholder="Teléfono" required>
+        <input class="cuadrito" type="text" id="consulta" placeholder="Su consulta" required>
+    </div>
 
-                </form>
+    <div class="mb-3">
+        <div class="aceptar-politicas">
+            <input type="checkbox" required><span class="pol_priv1">Acepto las </span><span class="pol_priv">políticas de privacidad</span> <span class="pol_priv1"> y los</span> <span class="pol_priv">términos de condiciones.</span>
+        </div>                        
+    </div>
+
+    <div class="mb-3">
+        <center>
+            <button class="btn btn-primary" type="submit">Solicitar</button>                    
+        </center>                    
+    </div>
+</form>
             </div>    
             </section>
         </section>
@@ -164,6 +164,7 @@
         <small>&copy; 2024 <b>SISA</b> - Todos los Derechos Reservados.</small>
     </div>
 </footer>
+<script src="js/form.js"></script>
 <script src="js/headroom.min.js"></script>
 <script src="js/menu-flex.js"></script>
 <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
