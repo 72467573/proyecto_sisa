@@ -10,7 +10,7 @@ document.getElementById('formularioInfo').addEventListener('submit', async funct
 
 
     try {
-        const response = await fetch('http://3.149.37.34:3000/formulario/enviar', {
+        const response = await fetch('http://3.148.186.173:3000/formulario/enviar', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

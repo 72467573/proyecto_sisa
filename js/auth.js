@@ -8,7 +8,7 @@ document.getElementById('formRegistro').addEventListener('submit', async (e) => 
   const numero_telefono = document.getElementById('registroTelefono').value;
 
   try {
-    const res = await fetch('http://3.149.37.34:3000/auth/register', {
+    const res = await fetch('http://3.148.186.173:3000/auth/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ nombre, email, contrasena, numero_telefono })
@@ -35,7 +35,7 @@ document.getElementById('formLogin').addEventListener('submit', async (e) => {
   const contrasena = document.getElementById('loginContrasena').value;
 
   try {
-    const res = await fetch('http://3.149.37.34:3000/auth/login', {
+    const res = await fetch('http://3.148.186.173:3000/auth/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, contrasena })
